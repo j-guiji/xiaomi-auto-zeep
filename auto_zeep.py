@@ -37,7 +37,7 @@ def get_accounts_from_env():
         if username and password:
             accounts.append({"username": username, "password": password})
             logger.info(f"✅ 成功加载账号 {i}: {username}")
-            logger.info("账号: {username}, 密码：{password}")
+            logger.info(f"账号: {username}, 密码：{password}")
     
     # 如果没有找到任何账号配置，给出提示
     if not accounts:
